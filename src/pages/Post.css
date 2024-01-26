@@ -1,0 +1,116 @@
+:root {
+    --light: #d8c3a5;
+    --white: #fff;
+    --grey: #8e8d8a;
+    --tamato: #e98074;
+    --red: #e85a4f;
+}
+
+.home {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    margin: auto;
+    max-width: 600px;
+    background-color: var(--light);
+}
+
+.post {
+    background-color: var(--white);
+    border: 2px solid var(--red);
+    border-radius: 20px;
+    margin-top: 20px;
+    width: 100%;
+}
+
+.inputPost {
+    border: 2px solid var(--grey);
+    width: 100%;
+    border-radius: 20px;
+}
+
+.inputText {
+    width: 90%;
+    margin: 10px;
+    height: 100px;
+    outline: none;
+    border: 0;
+    background: transparent;
+    border-radius: 15px;
+    padding: 10px;
+    font-size: 16px;
+}
+
+.inputPostButton {
+    width: 98%;
+    padding: 10px;
+    margin: 5px;
+    background: var(--tamato);
+    border-radius: 30px;
+    border: 0;
+    color: white;
+    cursor: pointer;
+}
+
+.postUsername, .replyName {
+    padding: 8px;
+    margin: 5px;
+    background: var(--grey);
+    border-radius: 30px;
+    border: 0;
+    color: white;
+    width: max-content;
+}
+
+.text {
+    font-size: 1.8rem;
+    margin-left: 20px;
+}
+
+.wrapperComment {
+    margin-left: 20px;
+}
+
+.replyInp {
+    width: 80%;
+    margin: 10px;
+    height: 30px;
+    outline: none;
+    border: 0;
+    background: transparent;
+    border: 1px solid var(--grey);
+    border-radius: 15px;
+    padding: 10px;
+    font-size: 14px;
+}
+
+.comment, .replyText {
+    margin-left: 20px;
+}
+
+.comments {
+    margin-top: 20px;
+}
+
+.submit {
+    padding: 10px;
+    margin: 5px;
+    background: var(--tamato);
+    border-radius: 30px;
+    border: 0;
+    color: white;
+    cursor: pointer;
+}
+
+hr {
+    background-color: var(--grey);
+    height: 1px;
+    border: none;
+}
+
+@media screen and (max-width: 600px) {
+    .inputText, .replyInp {
+        width: 100%;
+    }
+}
